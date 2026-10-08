@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #333333;
+}
+
+a { color: inherit; text-decoration: none; }
+ul { margin: 0; padding: 0; list-style: none; }
+
+/* Blue header, white text for everything inside */
+header {
+    min-height: 100vh;
+    padding: 0 30px;
+    background-color: #25437d;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Logo on the left, links on the right */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+}
+
+.nav-brand { width: 115px; height: auto; margin-left: 5px; }
+
+.nav-primary { display: flex; align-items: center; }
+.nav-item { margin-left: 16px; font-weight: 300; text-transform: capitalize; }
+
+/* Shared by "Contact" and "Get Ventive" */
+.cta-btn {
+    background-color: #3cc0ef;
+    border-radius: 8px;
+}
+.nav-item.cta-btn { padding: 10px 17px; margin-left: 16px; }
+
+.header-title {
+    margin: 130px 0 0;
+    font-size: 56px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.header-subtitle {
+    margin: 36px 0 0;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #4b7cb8;
+    text-transform: capitalize;
+}
+
+#button-container { margin-top: 36px; }
+
+.header-btn {
+    display: inline-block;
+    padding: 10px 19px;
+    font-weight: 300;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* Three equal columns, centred */
+.header-services {
+    display: flex;
+    justify-content: center;
+    margin: 80px auto 0;
+    max-width: 960px;
+    text-align: left;
+}
+
+.service {
+    flex: 1;
+    padding: 0 40px 20px;
+    cursor: pointer;
+}
+.service:hover { background-color: #3cc0ef; }
+
+.service-title {
+    margin: 26px 0 40px 18px;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
+
+.service-intro {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.service-link { display: block; margin-top: 20px; }
