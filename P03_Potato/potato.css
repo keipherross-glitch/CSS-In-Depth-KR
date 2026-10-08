@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font: 14px "Lato", sans-serif;
+    color: #333333;
+    text-align: center;
+}
+
+ul { margin: 0; padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+
+/* NAV */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 28px;
+    color: #ffffff;
+}
+.brand { margin: 0; font-size: 20px; font-weight: 900; }
+.nav-primary { display: flex; align-items: center; }
+.nav-item { margin-left: 24px; text-transform: uppercase; }
+.button-cta { padding: 10px 16px; border: 2px solid #ffffff; border-radius: 20px; }
+
+/* HEADER */
+header {
+    min-height: 100vh;
+    padding-top: 195px;
+    color: #ffffff;
+    background: radial-gradient(ellipse at center,
+        rgba(192,169,145,1) 0%,
+        rgba(192,169,145,1) 59%,
+        rgba(168,143,121,1) 100%);
+}
+.header-title { margin: 0; font-size: 44px; font-weight: 400; text-transform: capitalize; }
+.header-subtitle { margin: 16px 0 0; font-size: 14px; font-weight: 300; }
+.header-potato { display: block; margin: 55px auto 0; width: 400px; max-width: 100%; }
+
+/* FEATURES */
+.features {
+    padding: 190px 0 110px;
+    background: url("images/potato-background.png") center / cover no-repeat;
+}
+.features-title { margin: 0; font-size: 36px; font-weight: 300; text-transform: capitalize; }
+.features-subtitle { width: 460px; max-width: 90%; margin: 12px auto 0; font-weight: 300; }
+.feature-potatoes { display: block; margin: 30px auto 0; width: 350px; max-width: 100%; }
+
+/* BUY NOW */
+.buy-now { padding: 20px 0 40px; background-color: #fafafa; }
+.order-title { margin: 0 0 50px; font-size: 36px; font-weight: 300; text-transform: capitalize; }
+.potato-types { display: flex; justify-content: center; }
+.potato {
+    width: 272px;
+    padding: 0 10px;
+    border-right: 1px solid #333333;
+}
+.potato:first-child { border-left: none; }
+.potato-title { margin: 14px 0 20px; font-size: 24px; font-weight: 300; text-transform: capitalize; }
+.potato-description { margin-bottom: 20px; font-weight: 300; }
+.btn-order {
+    padding: 5px 20px;
+    background: transparent;
+    color: #92c926;
+    border: 2px solid #92c926;
+    border-radius: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-order:hover { background-color: #92c926; color: #ffffff; }
+.potato-price { margin: 6px 0 0; font-size: 12px; }
+.potato-img { display: block; margin: 40px auto 20px; max-width: 160px; height: auto; }
+
+/* FOOTER */
+footer { padding: 18px 0; background-color: #84705f; color: #ffffff; }
+.footer-text { margin: 0; font-weight: 900; }
